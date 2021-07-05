@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson Plan</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://icons8.com/icon/22396/user"></script>
+  <script src="https://kit.fontawesome.com/d6d1e68fd5.js" crossorigin="anonymous"></script>
+  <script>
+  
+  var btnContainer = document.getElementById("sidebar");
+  var btns=btnContainer.getElementByClassName("btn");
+  for(var i=0; i<btns.length ; i++)
+  {
+    btns[i].addEventListener('click', function(){
+      var current = document.getElementByClassName("active");
+      current[0].className=current[0].className.replace("active");
+      this.className += "active";
+
+    })
+  }
+
+</script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+    <h2>
+    <section class="logo">
+    <div class="circle1">
+      <div class="circle2">
+        <div class="circle3">
+          <div class="circle4">
+            <div class="circle5">              
+            </div>
+          </div>          
+        </div>        
+      </div>      
+    </div>
+    </section>
+    </h2>
+        <ul>
+            <li><center><a href="#" class="btn"><img src="https://img.icons8.com/windows/50/000000/user.png"/><br>Students</a>
+            </center></li>
+            <li><center><a href="#" class="btn active"><img src="https://img.icons8.com/ios/50/000000/book.png"/><br>Lesson Plan</a>
+            </center></li>
+            <li><center><a href="#" class="btn"><img src="https://img.icons8.com/material-outlined/48/000000/settings--v1.png"/></br>Settings</a></center></li>
+        </ul> 
+    </div>
+    <div class="main_content">
+        <div class="header"></div>
+        <div class="vid"><b><i class="fas fa-caret-left"></i> Videos</b></div>  
+        <div class="sub_content">
+        <input type="text" name="url" placeholder="Insert URL here"> 
+        <div class="or"><b>or</b></div>
+        <button><h3>upload</h3></button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
